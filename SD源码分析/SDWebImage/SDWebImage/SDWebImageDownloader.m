@@ -224,6 +224,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
         return;
     }
 
+    //加锁,在barrierQueue队列中创建下载任务
     dispatch_barrier_sync(self.barrierQueue, ^{
         BOOL first = NO;
         if (!self.URLCallbacks[url]) {

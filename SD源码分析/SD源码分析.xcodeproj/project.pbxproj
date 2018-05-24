@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D577CF62064ECD100FFF194 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D577CF52064ECD100FFF194 /* BViewController.m */; };
 		4DAD692E2056254D000AA790 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD692D2056254D000AA790 /* AppDelegate.m */; };
 		4DAD69312056254D000AA790 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD69302056254D000AA790 /* ViewController.m */; };
 		4DAD69342056254D000AA790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD69322056254D000AA790 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D577CF42064ECD100FFF194 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		4D577CF52064ECD100FFF194 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		4DAD69292056254D000AA790 /* SD源码分析.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SD源码分析.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAD692C2056254D000AA790 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAD692D2056254D000AA790 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				4DAD692D2056254D000AA790 /* AppDelegate.m */,
 				4DAD692F2056254D000AA790 /* ViewController.h */,
 				4DAD69302056254D000AA790 /* ViewController.m */,
+				4D577CF42064ECD100FFF194 /* BViewController.h */,
+				4D577CF52064ECD100FFF194 /* BViewController.m */,
 				4DAD69322056254D000AA790 /* Main.storyboard */,
 				4DAD69352056254D000AA790 /* Assets.xcassets */,
 				4DAD69372056254D000AA790 /* LaunchScreen.storyboard */,
@@ -354,6 +359,7 @@
 				4DAD6976205625E8000AA790 /* SDWebImageDownloader.m in Sources */,
 				4DAD697B205625E8000AA790 /* SDImageCache.m in Sources */,
 				4DAD6979205625E8000AA790 /* SDWebImageCompat.m in Sources */,
+				4D577CF62064ECD100FFF194 /* BViewController.m in Sources */,
 				4DAD697F205625E8000AA790 /* UIView+WebCacheOperation.m in Sources */,
 				4DAD697A205625E8000AA790 /* SDWebImagePrefetcher.m in Sources */,
 				4DAD6978205625E8000AA790 /* UIImage+MultiFormat.m in Sources */,

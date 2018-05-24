@@ -114,7 +114,7 @@
 
 
 /** 图片下载的核心方法
-    主要作用就是为 UIImageView+WebCache 和 SDWebImageDownloader, SDImageCache 之间构建一个桥梁, 使它们能够更好的协同工作。
+    主要作用就是为 UIImageView+WebCache, SDWebImageDownloader, SDImageCache 之间构建一个桥梁, 使它们能够更好的协同工作。
  */
 - (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
                                          options:(SDWebImageOptions)options
@@ -155,6 +155,7 @@
     }
     NSString *key = [self cacheKeyForURL:url];
     
+    //检查缓存
     operation.cacheOperation = [self.imageCache queryDiskCacheForKey:key done:^(UIImage *image, SDImageCacheType cacheType) {
         if (operation.isCancelled) {
             @synchronized (self.runningOperations) {

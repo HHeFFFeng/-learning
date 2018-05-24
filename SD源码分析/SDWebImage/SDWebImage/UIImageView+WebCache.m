@@ -62,8 +62,11 @@ static char TAG_ACTIVITY_SHOW;
         if ([self showActivityIndicatorView]) {
             [self addActivityIndicator];
         }
-
+        
         __weak __typeof(self)wself = self;
+        /**
+         还能这样: SDWebImageManager.sharedManager
+         */
         id <SDWebImageOperation> operation = [SDWebImageManager.sharedManager downloadImageWithURL:url options:options progress:progressBlock completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
             [wself removeActivityIndicator];
             if (!wself) return;
@@ -88,6 +91,7 @@ static char TAG_ACTIVITY_SHOW;
                 }
             });
         }];
+        //这一步还不是很懂
         [self sd_setImageLoadOperation:operation forKey:@"UIImageViewImageLoad"];
     } else {
         dispatch_main_async_safe(^{

@@ -397,6 +397,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     }
 
     // First check the in-memory cache...
+    //检查内存缓存中是否有对应的key
     UIImage *image = [self imageFromMemoryCacheForKey:key];
     if (image) {
         doneBlock(image, SDImageCacheTypeMemory);
@@ -410,6 +411,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
         }
 
         @autoreleasepool {
+            //检车磁盘缓存是否找到对应的Image
             UIImage *diskImage = [self diskImageForKey:key];
             if (diskImage && self.shouldCacheImagesInMemory) {
                 //计算缓存数据的大小

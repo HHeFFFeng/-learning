@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
 }
 
 + (id)shareVC {
@@ -46,6 +48,8 @@
     [self.img sd_setImageWithURL:[NSURL URLWithString:@"http://image.nationalgeographic.com.cn/2017/0802/20170802052401601.jpg"] placeholderImage:nil options:SDWebImageProgressiveDownload progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         NSLog(@"\nerror:%@\ncacheType:%zd",error,cacheType);
     }];
+    
 }
+
 
 @end
